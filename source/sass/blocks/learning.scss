@@ -1,0 +1,31 @@
+.learning__wrapper {
+  padding-top: 19px;
+
+  p {
+    margin-top: 38px;
+    margin-bottom: 23px;
+    width: 820px;
+  }
+}
+
+.learning__slider {
+  position: relative;
+  padding-top: 24px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 44px;
+  }
+}
+
+.learning__coaches {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 49px;
+}
+
+.learning__item {
+  width: 278px;
+  height: 377px;
+  background-color: rgba(196, 196, 196, 1);
+}

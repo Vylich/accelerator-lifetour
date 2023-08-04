@@ -1,0 +1,12 @@
+.polaroid {
+  position: absolute;
+  bottom: 185px;
+  right: 222px;
+  z-index: -1;
+
+  picture:last-child {
+    position: absolute;
+    top: 92px;
+    right: -102px;
+  }
+}

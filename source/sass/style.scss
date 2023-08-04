@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -14,6 +14,10 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/title";
+@import "global/star";
+
+
 
 // Blocks
 // ---------------------------------
@@ -23,6 +27,32 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/hero";
+@import "blocks/slider";
+@import "blocks/video";
+@import "blocks/info";
+@import "blocks/polaroid";
+@import "blocks/player";
+@import "blocks/swiper";
+@import "blocks/tours";
+@import "blocks/tour-card";
+@import "blocks/learning";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ---------------------------------
 

@@ -16,9 +16,9 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
-
+  font-family: $ff-montserrat;
+  color: $color-elephant;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-elephant;
   text-decoration: none;
 }
 

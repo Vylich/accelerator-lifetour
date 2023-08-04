@@ -1,0 +1,83 @@
+.tour-card {
+  color: $color-default-white;
+
+  &--elbrus {
+    background-image: url("../img/tours/tours-elbrus.jpg");
+  }
+
+  &--belukha {
+    background-image: url("../img/tours/tours-belukha.jpg");
+  }
+
+  &--fisht {
+    background-image: url("../img/tours/tours-fisht.jpg");
+  }
+}
+
+.tour-card__wrapper {
+  z-index: 2;
+  position: relative;
+  padding: 206px 20px 28px;
+
+
+
+  h3 {
+    margin: 0;
+    margin-top: 23px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 233px;
+  }
+}
+
+.tour-card__info-wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  div:first-child {
+    padding: 9px 25px;
+    background-color: $color-navy-blue;
+  }
+}
+
+.tour-card__data-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div:first-child {
+    border-top: 1px solid $color-default-white-opacity
+  }
+}
+
+.tour-card__data {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-top: 17px;
+
+  span {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+  }
+
+  span:first-child {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+    margin-bottom: 7px;
+  }
+}

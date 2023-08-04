@@ -1,0 +1,19 @@
+.title {
+  position: relative;
+
+  h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+  }
+}
+
+.title__big {
+  position: absolute;
+  font-size: 55px;
+  color: $color-elephant-big-text;
+  z-index: -2;
+  font-weight: 800;
+  bottom: 8px;
+  left: 0;
+}

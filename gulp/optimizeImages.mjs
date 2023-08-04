@@ -9,10 +9,10 @@ import svgo from 'imagemin-svgo';
 
 const sprite = () =>
   gulp
-      .src('source/img/sprite/*.svg')
+      .src('source/img/icons/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('build/img/sprite'));
 
 const optimizeSvg = () =>
   gulp

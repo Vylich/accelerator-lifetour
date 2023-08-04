@@ -1,0 +1,57 @@
+.swiper-pagination {
+  text-align: right;
+  left: -120px !important;
+  bottom: 90px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+
+  &-active {
+    background-color: $color-default-white;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 37px;
+  height: 35px;
+  outline: none;
+  border: none;
+  background-color: $color-navy-blue;
+}
+
+.swiper-button-next::after {
+  content: "";
+  background-image: url("../img/icons/arrow-right.svg");
+  width: 14px;
+  height: 7px;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  background-image: url("../img/icons/arrow-left.svg");
+  width: 14px;
+  height: 7px;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper__nav {
+  position: absolute;
+  right: -10px;
+  top: 19px;
+  display: flex;
+  gap: 24px;
+}

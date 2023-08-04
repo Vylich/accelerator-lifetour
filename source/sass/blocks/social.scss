@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+
+.social__icon {
+  background-color: $color-default-white;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  color: $color-elephant;
+  transition: background, color $trans-default;
+  border: 1px solid $color-elephant-opacity;
+}
