@@ -4,6 +4,8 @@ $color-elephant: #2d383f;
 $color-navy-blue: #0266c1;
 $color-overlay-burger: rgba(0, 0, 0, 0.5);
 $color-elephant-opacity: rgba(45, 56, 63, 0.3);
+$color-navy-blue-opacity: rgba(2, 102, 193, 0.2);
+
 // Default
 
 $color-default-black: #000000;
@@ -28,6 +30,7 @@ $black-to-right: linear-gradient(
 
 $overlay-slider-gradient: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.00) 100%);
 $overlay-card-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 11.90%, rgb(0, 0, 0, 0) 100%);
+$box-shadow-coaches: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
 
 // Typography
 // ---------------------------------

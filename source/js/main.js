@@ -1,12 +1,19 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {checkHeroSlider, checkToursSlider} from './modules/slider';
+import {
+  checkHeroSlider,
+  checkToursSlider,
+  checkCoachesSlider,
+  checkReviewsSlider,
+  checkAdvantagesSlider,
+  checkGallerySlider
+} from './modules/slider';
+import {createMap} from './modules/map';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 
@@ -18,9 +25,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
     checkHeroSlider();
     checkToursSlider();
+    checkCoachesSlider();
+    checkReviewsSlider();
+    checkAdvantagesSlider();
+    checkGallerySlider();
+    createMap();
     initModals();
     const form = new Form();
     window.form = form;

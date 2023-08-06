@@ -1,3 +1,7 @@
+.learning {
+  border-bottom: 1px solid $color-navy-blue-opacity;
+}
+
 .learning__wrapper {
   padding-top: 19px;
 
@@ -10,7 +14,9 @@
 
 .learning__slider {
   position: relative;
-  padding-top: 24px;
+  padding: 24px 0 0 25px;
+  margin-left: -25px;
+
 
   h3 {
     margin: 0;
@@ -20,12 +26,53 @@
 
 .learning__coaches {
   display: flex;
-  gap: 30px;
   margin-bottom: 49px;
 }
 
 .learning__item {
   width: 278px;
   height: 377px;
-  background-color: rgba(196, 196, 196, 1);
+  background-color: $color-default-white;
+  padding: 20px;
+  box-shadow: $box-shadow-coaches;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin: 0;
+    width: 111px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.learning__link {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0 4px;
+  margin: 0;
+  border: 1px solid $color-navy-blue-opacity;
+}
+
+.learning__process {
+  h3 {
+    margin: 0;
+    margin-bottom: 45px;
+  }
 }

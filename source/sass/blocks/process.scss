@@ -1,0 +1,32 @@
+.process__wrapper {
+  display: flex;
+}
+
+.process__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 32px;
+  position: relative;
+
+  span:last-child {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  span:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+    bottom: -40px;
+    left: 0;
+  }
+}

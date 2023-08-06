@@ -1,0 +1,42 @@
+.gallery {
+  margin-top: 107px;
+}
+
+.gallery__item {
+  max-height: 449px;
+  overflow: hidden;
+  width: auto;
+
+  &--more {
+    picture:first-child {
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+
+
+  picture {
+    width: min-content !important;
+  }
+
+  img {
+    object-fit: cover;
+
+  }
+}
+
+.gallery__container {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery__wrapper {
+  position: relative;
+}
+
+.gallery__nav {
+  right: 110px;
+  top: -10px;
+}

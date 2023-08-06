@@ -1,0 +1,64 @@
+.reviews {
+  margin-top: 30px;
+  padding-right: 0;
+
+}
+
+.reviews__slider {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  margin-left: -25px;
+  position: relative;
+  overflow-x: hidden;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.reviews__item {
+  width: 790px;
+  height: 293px;
+  box-shadow: $box-shadow-coaches;
+  padding: 20px 40px 20px 20px;
+  display: flex;
+}
+
+.reviews__nav {
+  right: 85px;
+}
+
+.reviews__content {
+  margin: 16px 0 16px 30px;
+  width: 442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p:first-child {
+    margin-bottom: 14px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h4 {
+    margin: 0;
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
