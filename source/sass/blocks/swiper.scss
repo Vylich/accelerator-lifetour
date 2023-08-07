@@ -2,6 +2,12 @@
   text-align: right;
   left: -120px !important;
   bottom: 90px !important;
+
+  @include vp-1199 {
+    text-align: center;
+    left: auto !important;
+    bottom: 30px !important;
+  }
 }
 
 .swiper-pagination-bullet {

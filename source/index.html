@@ -12,7 +12,10 @@
     <div class="wrapper">
       <section class="hero">
         <header class="header">
-          <div class="header__wrapper container">
+          <div class="header__wrapper container main-nav">
+            <button class="main-nav__toggle">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
             <a href="#" class="header__logo logo">
               <svg width="205" height="62" focusable="false" aria-hidden="true">
                 <use xlink:href="img/sprite/sprite.svg#logo"></use>
@@ -70,7 +73,14 @@
               </div>
               <p class="slider__picture">
                 <picture>
-                  <img src="img/backgrounds/bg-caucasus-desktop.jpg""
+                  <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/bg-caucasus-tablet.jpg    1x,
+                          img/bg-caucasus-tablet@2x.jpg 2x
+                        "
+                      />
+                  <img src="img/backgrounds/bg-caucasus-desktop.jpg"
                   srcset="img/backgrounds/bg-caucasus-desktop@2x.jpg 2x"
                   width="1440" height="800" loading="lazy" alt="Портрет мужчины"
                   />
@@ -1033,9 +1043,7 @@
                   </svg>
                 </span>
                 <div>
-                  <h4>
-                    Телефон
-                  </h4>
+                  <h4>Телефон</h4>
                   <a href="tel:+79837454545"> 8 983 745 45 45</a>
                 </div>
               </li>
@@ -1052,9 +1060,7 @@
                   </svg>
                 </span>
                 <div>
-                  <h4>
-                    E-mail
-                  </h4>
+                  <h4>E-mail</h4>
                   <a href="mailto:info@lifetour.com">info@lifetour.com</a>
                 </div>
               </li>
@@ -1071,9 +1077,7 @@
                   </svg>
                 </span>
                 <div>
-                  <h4>
-                    Адрес
-                  </h4>
+                  <h4>Адрес</h4>
                   <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
                 </div>
               </li>

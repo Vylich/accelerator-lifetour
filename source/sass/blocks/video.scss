@@ -3,6 +3,19 @@
   bottom: 177px;
   right: 120px;
   z-index: -1;
+
+  @include vp-1199 {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 50px;
+
+    img {
+      width: 442px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
 }
 
 .video__button {

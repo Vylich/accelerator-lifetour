@@ -28,8 +28,21 @@ const checkToursSlider = () => {
       nextEl: '.swiper__btn-next',
       prevEl: '.swiper__btn-prev',
     },
-    spaceBetween: 30,
-    slidesPerView: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+      },
+    },
     loop: true,
   });
 };
@@ -43,8 +56,21 @@ const checkCoachesSlider = () => {
       nextEl: '.swiper__btn-next',
       prevEl: '.swiper__btn-prev',
     },
-    spaceBetween: 30,
-    slidesPerView: 4,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+      },
+    },
     loop: false,
   });
 };
@@ -87,6 +113,14 @@ const checkGallerySlider = () => {
     navigation: {
       nextEl: '.gallery__btn-next',
       prevEl: '.gallery__btn-prev',
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 3,
+      },
+      768: {
+        spaceBetween: 5,
+      },
     },
     spaceBetween: 5,
     slidesPerView: 'auto',

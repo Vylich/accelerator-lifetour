@@ -10,6 +10,7 @@ import {
   checkGallerySlider
 } from './modules/slider';
 import {createMap} from './modules/map';
+import {initMenu} from './modules/menu';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checkAdvantagesSlider();
     checkGallerySlider();
     createMap();
+    initMenu();
     initModals();
     const form = new Form();
     window.form = form;
