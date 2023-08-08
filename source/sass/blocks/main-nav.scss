@@ -41,6 +41,7 @@
 
   .main-nav--opened {
     background-color: $color-default-white;
+    overflow: hidden;
     svg {
       color: $color-elephant;
     }
@@ -58,6 +59,7 @@
       height: 100vh;
       background-color: $color-overlay-burger;
       z-index: -1;
+
     }
   }
 }

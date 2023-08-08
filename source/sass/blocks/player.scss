@@ -5,4 +5,11 @@
   position: absolute;
   bottom: 271px;
   right: 120px;
+
+  @include vp-1199 {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 69px;
+  }
 }

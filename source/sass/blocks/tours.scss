@@ -11,6 +11,10 @@
     height: 279px;
     bottom: -87px;
     left: -387px;
+
+    @include vp-1199 {
+      display: none;
+    }
   }
 
   &::before {
@@ -22,6 +26,11 @@
     top: -130px;
     right: 0px;
     z-index: -1;
+
+    @include vp-1199 {
+      right: -309px;
+      top: -152px;
+    }
   }
 }
 
@@ -39,27 +48,14 @@
     text-transform: uppercase;
     font-size: 16px;
     margin: 0;
+
+    @include vp-1199 {
+      line-height: 16px;
+    }
   }
 }
 
 .tours__list {
   display: flex;
   margin-top: 58px;
-}
-
-.tours__item {
-  width: 380px;
-  height: 412px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: $overlay-card-gradient;
-    z-index: 1;
-  }
 }

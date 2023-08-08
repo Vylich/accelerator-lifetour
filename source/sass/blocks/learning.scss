@@ -9,6 +9,10 @@
     margin-top: 38px;
     margin-bottom: 23px;
     width: 820px;
+
+    @include vp-1199 {
+      width: 560px;
+    }
   }
 }
 
@@ -35,6 +39,11 @@
   background-color: $color-default-white;
   padding: 20px;
   box-shadow: $box-shadow-coaches;
+
+  @include vp-1199 {
+    height: 411px;
+    padding: 15px;
+  }
 
   div {
     display: flex;
