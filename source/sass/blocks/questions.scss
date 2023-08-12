@@ -1,21 +1,21 @@
 .questions {
-  background-image: url('../img/backgrounds/bg-form.jpg');
+  background-image: url("../img/backgrounds/bg-form.jpg");
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @include retina {
-    background-image: url('../img/backgrounds/bg-form@2x.jpg');
+    background-image: url("../img/backgrounds/bg-form@2x.jpg");
   }
 
   @include vp-1199 {
-    background-image: url('../img/backgrounds/bg-form-tablet.jpg');
+    background-image: url("../img/backgrounds/bg-form-tablet.jpg");
     height: 679px;
   }
 
   @include vp-767 {
-    background-image: url('../img/backgrounds/bg-form-mobile.jpg');
+    background-image: url("../img/backgrounds/bg-form-mobile.jpg");
     height: 621px;
   }
 }
@@ -93,7 +93,6 @@
   @include vp-1199 {
     width: 100%;
     flex-direction: column;
-    padding: 0 10px;
     margin-top: 30px;
     gap: 15px;
     padding: 0 15px;
@@ -153,7 +152,7 @@
       border: 1px solid $color-resolution-blue;
 
       &::placeholder {
-        color: $color-transparent
+        color: $color-transparent;
       }
     }
 
@@ -162,7 +161,7 @@
       border: 1px solid $color-resolution-blue;
 
       &::placeholder {
-        color: $color-transparent
+        color: $color-transparent;
       }
     }
 

@@ -1,23 +1,23 @@
 .swiper-pagination {
   text-align: right;
-  left: -116px !important;
-  bottom: 91px !important;
+  left: -116px !important;/* stylelint-disable-line declaration-no-important */
+  bottom: 91px !important;/* stylelint-disable-line declaration-no-important */
   gap: 3px;
 
   @include vp-1199 {
-    width: 99% !important;
+    width: 99% !important;/* stylelint-disable-line declaration-no-important */
     text-align: center;
-    left: auto !important;
-    bottom: 84px !important;
+    left: auto !important;/* stylelint-disable-line declaration-no-important */
+    bottom: 84px !important;/* stylelint-disable-line declaration-no-important */
   }
 
   @include vp-767 {
-    bottom: 34px !important;
+    bottom: 34px !important;/* stylelint-disable-line declaration-no-important */
   }
 }
 
 .swiper-button-disabled {
-  opacity: 0.1 !important;
+  opacity: 0.1 !important;/* stylelint-disable-line declaration-no-important */
 }
 
 .swiper-pagination-bullet {
@@ -27,7 +27,7 @@
   border-radius: 50%;
   border: 1px solid $color-default-white;
   opacity: 1;
-  margin-left: 11px !important;
+  margin-left: 11px !important;/* stylelint-disable-line declaration-no-important */
 
   &-active {
     background-color: $color-default-white;
@@ -36,7 +36,7 @@
   @include vp-767 {
     width: 8px;
     height: 8px;
-    margin-left: 8px !important;
+    margin-left: 8px !important;/* stylelint-disable-line declaration-no-important */
   }
 }
 

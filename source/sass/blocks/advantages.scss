@@ -8,7 +8,7 @@
     background-size: contain;
     width: 906px;
     height: 391px;
-    top:-215px;
+    top: -215px;
     left: -465px;
 
     @include vp-1199 {
@@ -174,7 +174,6 @@
       display: block;
       flex-wrap: wrap;
       gap: 30px;
-
     }
   }
 }

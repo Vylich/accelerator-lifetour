@@ -1,7 +1,6 @@
 .tour-card {
   color: $color-default-white;
   position: relative;
-
 }
 
 .tour-card__wrapper {
@@ -62,7 +61,6 @@
       line-height: 24px;
       padding-right: 56px;
     }
-
   }
 }
 
@@ -128,8 +126,6 @@
       padding: 9px 16px;
     }
   }
-
-
 }
 
 .tour-card__data-wrapper {
@@ -147,7 +143,7 @@
   }
 
   div:first-child {
-    border-top: 1px solid $color-default-white-opacity
+    border-top: 1px solid $color-default-white-opacity;
   }
 }
 

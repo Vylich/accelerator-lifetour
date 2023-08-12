@@ -34,7 +34,7 @@
     width: 602px;
     height: 1364px;
     top: -127px;
-    right: 0px;
+    right: 0;
     z-index: -1;
 
     @include vp-1199 {
@@ -89,6 +89,8 @@
 
     svg {
       transition: color $trans-default;
+      width: 10px;
+      height: auto;
     }
 
     &:disabled {
@@ -111,11 +113,6 @@
       svg {
         color: $color-navy-blue;
       }
-    }
-
-    svg {
-      width: 10px;
-      height: auto;
     }
 
     span {

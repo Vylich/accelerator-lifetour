@@ -94,6 +94,7 @@
       object-fit: cover;
       width: 100%;
     }
+
     @include vp-767 {
       width: 100%;
     }
@@ -146,6 +147,7 @@
   margin: 0;
   border: 1px solid $color-navy-blue-opacity;
   transition: border $trans-default;
+
   svg {
     transition: color $trans-default;
   }
