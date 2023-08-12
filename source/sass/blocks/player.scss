@@ -1,10 +1,11 @@
 .player {
-  background-color: $color-default-white-opacity;
+  background-color: $color-player;
   width: 340px;
   height: 220px;
   position: absolute;
-  bottom: 271px;
+  bottom: 279px;
   right: 120px;
+  padding: 40px;
 
   @include vp-1199 {
     position: relative;
@@ -12,4 +13,107 @@
     right: auto;
     margin-top: 69px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.player__wrapper,
+.player__time,
+.player__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player__track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.player__track-title {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-resolution-blue;
+}
+
+.player__track-artist {
+  margin: 4px 0 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: rgba(28, 51, 116, 0.5);
+}
+
+.player__time-line {
+  margin: 14px 0 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(28, 51, 116, 0.4);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 148px;
+    background-color: rgba(28, 51, 116, 1);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgba(28, 51, 116, 1);
+    left: 144px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.player__time {
+  margin: 10px 0 0;
+
+  span {
+    color: $color-resolution-blue;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+}
+
+.player__control {
+  margin: 13px 0 0;
+  padding: 0 3px;
+}
+
+.player__main-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.player__play-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  background: 0;
+}
+
+.player__top-buttons {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }

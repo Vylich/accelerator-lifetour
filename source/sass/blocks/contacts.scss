@@ -1,11 +1,22 @@
 .contacts {
-  margin-top: 60px;
+  margin-top: 89px;
+  margin-bottom: 100px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    margin-bottom: 70px;
+    margin-top: 88px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    margin-top: 65px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
   position: relative;
-  margin-bottom: 104px;
 
   @include vp-1199 {
     flex-direction: column;
@@ -13,8 +24,20 @@
 
   p {
     margin: 0;
-    margin-top: 25px;
-    width: 483px;
+    margin-top: 28px;
+    padding-right: 719px;
+
+    @include vp-1199 {
+      padding-right: 195px;
+      margin-top: 18px;
+    }
+
+    @include vp-767 {
+      padding-right: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 12px;
+    }
   }
 }
 
@@ -30,28 +53,45 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-top: 50px;
+  gap: 35px;
+  margin-top: 49px;
 
   @include vp-1199 {
     flex-direction: row;
     width: 100%;
+    margin-top: 40px;
+    gap: 44px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding-right: 90px;
+    margin-top: 30px;
+    gap: 30px;
   }
 
   li {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
     @include vp-1199 {
       align-items: start;
-      gap: 10px;
+      gap: 8px;
+    }
+
+    @include vp-767 {
+      gap: 12px;
     }
 
     div {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 9px;
+
+      @include vp-1199 {
+        gap: 6px;
+      }
     }
   }
 
@@ -64,6 +104,11 @@
     @include vp-1199 {
       font-size: 16px;
       line-height: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
     }
   }
 
@@ -84,11 +129,20 @@
       font-size: 14px;
     }
   }
+
+  span {
+    svg {
+      @include vp-767 {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
 }
 
 .contacts__map-wrap {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   right: 0;
   width: 585px;
   height: 324px;
@@ -99,5 +153,11 @@
     right: auto;
     width: 100%;
     margin-top: 40px;
+    height: 340px;
+  }
+
+  @include vp-767 {
+    margin-top: 27px;
+    height: 320px;
   }
 }

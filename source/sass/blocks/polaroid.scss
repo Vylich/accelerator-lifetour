@@ -1,6 +1,6 @@
 .polaroid {
   position: absolute;
-  bottom: 185px;
+  bottom: 190px;
   right: 222px;
   z-index: -1;
 
@@ -10,6 +10,10 @@
     right: auto;
     display: flex;
     margin-top: 34px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 
   picture:first-child {
@@ -33,7 +37,7 @@
       width: 236px;
       height: 312px;
       margin-left: -59px;
-      margin-top: 57px;
+      margin-top: 52px;
     }
   }
 }

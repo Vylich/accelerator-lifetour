@@ -1,5 +1,9 @@
 .learning {
   border-bottom: 1px solid $color-navy-blue-opacity;
+
+  @include vp-1199 {
+    border: none;
+  }
 }
 
 .learning__wrapper {
@@ -8,29 +12,64 @@
   p {
     margin-top: 38px;
     margin-bottom: 23px;
-    width: 820px;
+    padding-right: 400px;
+
 
     @include vp-1199 {
-      width: 560px;
+      padding-right: 150px;
+      margin-top: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 17px;
+      padding-right: 0;
+      margin-bottom: 3px;
     }
   }
 }
 
 .learning__slider {
   position: relative;
-  padding: 24px 0 0 25px;
+  padding: 34px 0 0 25px;
   margin-left: -25px;
+
+  @include vp-1199 {
+    padding-top: 43px;
+  }
 
 
   h3 {
     margin: 0;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
+    font-size: 21px;
+    line-height: 21px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      margin-bottom: 34px;
+    }
   }
 }
 
 .learning__coaches {
   display: flex;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 37px;
+  }
 }
 
 .learning__item {
@@ -45,12 +84,36 @@
     padding: 15px;
   }
 
+  @include vp-767 {
+    padding: 20px;
+    height: 385px;
+  }
+
+  picture {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
   div {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 14px;
+    margin-top: 16px;
+    margin-bottom: 13px;
     align-items: center;
+
+    @include vp-1199 {
+      margin-bottom: 11px;
+    }
+
+    @include vp-767 {
+      margin-right: 12px;
+      margin-bottom: 10px;
+    }
   }
 
   h4 {
@@ -66,6 +129,11 @@
     line-height: 16px;
     width: auto;
     margin: 0;
+    padding-right: 0;
+
+    @include vp-1199 {
+      line-height: 18px;
+    }
   }
 }
 
@@ -77,11 +145,53 @@
   padding: 0 4px;
   margin: 0;
   border: 1px solid $color-navy-blue-opacity;
+
+  @include hover-focus {
+    border: 1px solid $color-elephant;
+  }
+
+  @include active {
+    background-color: $color-navy-blue;
+    border: 1px solid $color-navy-blue;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
 }
 
 .learning__process {
   h3 {
+    font-size: 21px;
+    line-height: 21px;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 41px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+      margin-left: 4px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.learning__nav {
+  right: -8px;
+  top: 26px;
+
+  @include vp-1199 {
+    top: 34px;
+    right: -10px;
+  }
+
+  @include vp-767 {
+    right: -10px;
   }
 }

@@ -1,7 +1,17 @@
 .tours {
-  margin-top: 119px;
+  margin-top: 109px;
   position: relative;
-  margin-bottom: 102px;
+  margin-bottom: 109px;
+
+  @include vp-1199 {
+    margin-top: 69px;
+    margin-bottom: 65px;
+  }
+
+  @include vp-767 {
+    margin-top: 25px;
+    margin-bottom: 43px;
+  }
 
   &::after {
     content: "";
@@ -23,13 +33,21 @@
     background-image: url("../img/decorative-img/mountains-in-clouds.png");
     width: 602px;
     height: 1364px;
-    top: -130px;
+    top: -127px;
     right: 0px;
     z-index: -1;
 
     @include vp-1199 {
-      right: -309px;
-      top: -152px;
+      right: -308px;
+      top: -164px;
+    }
+
+    @include vp-767 {
+      right: -216px;
+      top: 296px;
+      background-size: contain;
+      width: 346px;
+      height: 595px;
     }
   }
 }
@@ -37,25 +55,100 @@
 .tours__slider {
   height: 100%;
   padding-top: 19px;
-  padding-bottom: 58px;
+  padding-bottom: 50px;
+
+  @include vp-1199 {
+    padding-left: 7px;
+    padding-right: 5px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 27px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.tours__title {
+  @include vp-1199 {
+    margin-left: -7px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .tours__wrapper {
+  a {
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
+
+    &:disabled {
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    @include hover-focus {
+      outline: none;
+      color: $color-resolution-blue;
+
+      svg {
+        color: $color-resolution-blue;
+      }
+    }
+
+    @include active {
+      color: $color-navy-blue;
+
+      svg {
+        color: $color-navy-blue;
+      }
+    }
+
+    svg {
+      width: 10px;
+      height: auto;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   p {
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.64px;
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 16px;
     margin: 0;
 
     @include vp-1199 {
       line-height: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
     }
   }
 }
 
 .tours__list {
   display: flex;
-  margin-top: 58px;
+  margin-top: 60px;
+
+  @include vp-1199 {
+    margin-top: 44px;
+  }
+
+  @include vp-767 {
+    margin-top: 26px;
+  }
 }

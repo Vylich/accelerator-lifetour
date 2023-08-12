@@ -1,13 +1,23 @@
 .swiper-pagination {
   text-align: right;
-  left: -120px !important;
-  bottom: 90px !important;
+  left: -116px !important;
+  bottom: 91px !important;
+  gap: 3px;
 
   @include vp-1199 {
+    width: 99% !important;
     text-align: center;
     left: auto !important;
-    bottom: 30px !important;
+    bottom: 84px !important;
   }
+
+  @include vp-767 {
+    bottom: 34px !important;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.1 !important;
 }
 
 .swiper-pagination-bullet {
@@ -17,9 +27,16 @@
   border-radius: 50%;
   border: 1px solid $color-default-white;
   opacity: 1;
+  margin-left: 11px !important;
 
   &-active {
     background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+    margin-left: 8px !important;
   }
 }
 
@@ -34,22 +51,44 @@
   outline: none;
   border: none;
   background-color: $color-navy-blue;
+
+  @include hover {
+    &::after {
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  @include focus {
+    &::after {
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
 }
 
 .swiper-button-next::after {
   content: "";
-  background-image: url("../img/icons/arrow-right.svg");
+  mask-image: url("../img/icons/arrow-right.svg");
   width: 14px;
-  height: 7px;
+  height: 8px;
+  background-color: $color-default-white;
   background-position: center;
   background-size: cover;
 }
 
 .swiper-button-prev::after {
   content: "";
-  background-image: url("../img/icons/arrow-left.svg");
+  mask-image: url("../img/icons/arrow-left.svg");
   width: 14px;
-  height: 7px;
+  height: 8px;
+  background-color: $color-default-white;
   background-position: center;
   background-size: cover;
 }
@@ -57,7 +96,16 @@
 .swiper__nav {
   position: absolute;
   right: -10px;
-  top: 19px;
+  top: 14px;
   display: flex;
   gap: 24px;
+
+  @include vp-1199 {
+    right: -10px;
+    top: 14px;
+  }
+
+  @include vp-767 {
+    top: 24px;
+  }
 }

@@ -1,6 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
 import {
   checkHeroSlider,
   checkToursSlider,
@@ -11,6 +9,13 @@ import {
 } from './modules/slider';
 import {createMap} from './modules/map';
 import {initMenu} from './modules/menu';
+import {findVideos} from './modules/video';
+import {onEventCalllback} from './modules/phone-mask.js';
+import {formValidate} from './modules/form';
+import {resetFocus} from './utils/reset-focus';
+import {attachAudioPlayer} from './modules/audio';
+
+const phoneInputs = document.querySelectorAll('[data-phone-pattern]');
 
 // ---------------------------------
 
@@ -19,6 +24,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+
+  if (phoneInputs) {
+    for (let elem of phoneInputs) {
+      for (let ev of ['input', 'blur', 'focus']) {
+        elem.addEventListener(ev, onEventCalllback);
+      }
+    }
+  }
 
   // Modules
   // ---------------------------------
@@ -29,15 +42,15 @@ window.addEventListener('DOMContentLoaded', () => {
     checkHeroSlider();
     checkToursSlider();
     checkCoachesSlider();
-    checkReviewsSlider();
     checkAdvantagesSlider();
+    checkReviewsSlider();
     checkGallerySlider();
     createMap();
+    findVideos();
     initMenu();
-    initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    resetFocus();
+    formValidate();
+    attachAudioPlayer();
   });
 });
 

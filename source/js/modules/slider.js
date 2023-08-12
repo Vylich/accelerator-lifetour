@@ -9,7 +9,8 @@ const galleryContainer = document.querySelector('.gallery__slider');
 
 const checkHeroSlider = () => {
   const swiper = new Swiper(heroContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
+    loop: true,
     speed: 300,
 
     pagination: {
@@ -21,7 +22,7 @@ const checkHeroSlider = () => {
 
 const checkToursSlider = () => {
   const swiper = new Swiper(toursContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
     speed: 300,
 
     navigation: {
@@ -49,7 +50,7 @@ const checkToursSlider = () => {
 
 const checkCoachesSlider = () => {
   const swiper = new Swiper(coachesContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
     speed: 300,
 
     navigation: {
@@ -77,7 +78,7 @@ const checkCoachesSlider = () => {
 
 const checkReviewsSlider = () => {
   const swiper = new Swiper(reviewsContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
     speed: 300,
 
     navigation: {
@@ -92,7 +93,7 @@ const checkReviewsSlider = () => {
 
 const checkAdvantagesSlider = () => {
   const swiper = new Swiper(advantagesContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
     speed: 300,
 
     navigation: {
@@ -100,14 +101,14 @@ const checkAdvantagesSlider = () => {
       prevEl: '.advantages__btn-prev',
     },
     spaceBetween: 30,
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     loop: true,
   });
 };
 
 const checkGallerySlider = () => {
   const swiper = new Swiper(galleryContainer, {
-    simulateTouch: true,
+    simulateTouch: false,
     speed: 300,
 
     navigation: {

@@ -2,24 +2,56 @@
   position: relative;
   padding-top: 30px;
   text-align: center;
+
+  @include vp-767 {
+    padding-top: 28px;
+
+    h2 {
+      padding-right: 0;
+    }
+  }
 }
 
 .advantages__item {
-  width: 380px;
   padding: 40px 20px;
-  height: 329px;
   text-align: center;
   border: 1px solid $color-navy-blue-opacity;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  height: auto;
+
+  @include vp-1199 {
+    max-width: 324px;
+    padding: 30px 20px;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
+  }
 
   h4 {
-    margin-top: 30px;
+    margin-top: 29px;
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 600px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 25px;
+      margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.02px;
+    }
   }
 
   p {
@@ -27,6 +59,11 @@
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 
   span {
@@ -35,14 +72,45 @@
     align-items: center;
     justify-content: center;
     border: 1px solid $color-navy-blue;
-    padding: 17px;
+    padding: 16px 17px;
 
+    @include vp-1199 {
+      padding: 14px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    @include vp-767 {
+      padding: 12px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }
 
 .advantages__container {
   display: flex;
-  padding: 50px 0 85px;
+  padding: 52px 0 85px;
+  align-items: stretch;
+
+  @include vp-1199 {
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-top: 48px;
+  }
+
+  @include vp-767 {
+    padding-top: 29px;
+    gap: 15px;
+  }
 }
 
 .advantages__nav {
@@ -52,8 +120,27 @@
   transform: translateX(-50%);
   justify-content: center;
   z-index: 10;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .advantages__slider {
   overflow: visible;
+
+  &--tablet {
+    display: none;
+  }
+
+  @include vp-1199 {
+    display: none;
+
+    &--tablet {
+      display: block;
+      flex-wrap: wrap;
+      gap: 30px;
+
+    }
+  }
 }
