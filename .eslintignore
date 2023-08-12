@@ -1,7 +1,0 @@
-build/*.js
-source/js/vendor/*.js
-source/js/modules/*.js
-/swiper-custom.scss
-gulpfile.js
-webpack.config.cjs
-/leaflet.scss
