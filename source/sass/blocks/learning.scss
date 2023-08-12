@@ -145,6 +145,10 @@
   padding: 0 4px;
   margin: 0;
   border: 1px solid $color-navy-blue-opacity;
+  transition: border $trans-default;
+  svg {
+    transition: color $trans-default;
+  }
 
   @include hover-focus {
     border: 1px solid $color-elephant;

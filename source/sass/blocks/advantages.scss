@@ -1,3 +1,36 @@
+.advantages {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decorative-img/clouds.png");
+    background-size: contain;
+    width: 906px;
+    height: 391px;
+    top:-215px;
+    left: -465px;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decorative-img/clouds.png");
+    width: 788px;
+    height: 263px;
+    top: -34px;
+    right: -186px;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
 .advantages__wrapper {
   position: relative;
   padding-top: 30px;
@@ -16,6 +49,7 @@
   padding: 40px 20px;
   text-align: center;
   border: 1px solid $color-navy-blue-opacity;
+  background-color: $color-default-white;
   display: flex;
   flex-direction: column;
   align-items: center;

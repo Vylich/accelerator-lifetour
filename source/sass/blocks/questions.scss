@@ -24,17 +24,19 @@
   color: $color-default-white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100%;
   text-align: center;
+  padding-top: 100px;
 
   @include vp-1199 {
     padding: 0 236px;
+    padding-top: 100px;
   }
 
   @include vp-767 {
     padding: 0;
+    padding-top: 175px;
   }
 
   h2 {
@@ -98,7 +100,7 @@
   }
 
   @include vp-767 {
-    gap: 8px;
+    gap: 5px;
     margin-top: 26px;
   }
 
@@ -130,6 +132,11 @@
 
     &::placeholder {
       opacity: 0.5;
+
+      @include vp-767 {
+        font-size: 14px;
+        line-height: 14px;
+      }
     }
 
     @include hover {
@@ -162,6 +169,10 @@
     @include vp-1199 {
       width: 100%;
       padding: 15px 15px;
+    }
+
+    @include vp-767 {
+      padding: 15px 14px;
     }
   }
 
