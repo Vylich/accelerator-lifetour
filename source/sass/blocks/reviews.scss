@@ -118,7 +118,7 @@
   }
 }
 
-.reviews__content {
+.reviews__item article {
   padding-top: 15px;
   padding-bottom: 16px;
   flex: 2;
@@ -164,17 +164,16 @@
   span {
     font-size: 12px;
   }
-}
 
+  div:last-child {
+    margin-top: 24px;
 
-.reviews__info {
-  margin-top: 24px;
+    @include vp-1199 {
+      margin-top: 27px;
+    }
 
-  @include vp-1199 {
-    margin-top: 27px;
-  }
-
-  @include vp-767 {
-    margin-top: 16px;
+    @include vp-767 {
+      margin-top: 16px;
+    }
   }
 }

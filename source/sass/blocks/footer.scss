@@ -49,17 +49,19 @@
     @include active {
       color: $color-navy-blue;
     }
-
-    @include vp-1199 {
-      &:last-child {
-        display: none;
-      }
-    }
   }
 
   @include vp-767 {
     flex-direction: column;
   }
+}
+
+.footer__nav-wrapper a {
+  @include vp-1199 {
+      &:last-child {
+        display: none;
+      }
+    }
 }
 
 .footer__nav {
@@ -86,12 +88,9 @@
     line-height: 16px;
     font-weight: 400;
     transition: color $trans-default;
-
-    span {
-      padding: 3px 5px;
-      border: 1px solid $color-transparent;
-      transition: border $trans-default;
-    }
+    padding: 3px 5px;
+    border: 1px solid $color-transparent;
+    transition: border $trans-default;
 
     &:disabled {
       opacity: 0.1;
@@ -101,27 +100,18 @@
     @include hover {
       outline: none;
       color: $color-elephant;
-
-      span {
-        border-bottom: 1px solid $color-elephant;
-      }
+      border-bottom: 1px solid $color-elephant;
     }
 
     @include focus {
       outline: none;
       color: $color-elephant;
-
-      span {
-        border: 1px solid $color-elephant;
-      }
+      border: 1px solid $color-elephant;
     }
 
     @include active {
       color: $color-elephant;
-
-      span {
-        border: 1px solid $color-transparent;
-      }
+      border: 1px solid $color-transparent;
     }
 
     @include vp-1199 {
@@ -132,10 +122,7 @@
 
     @include vp-767 {
       margin-top: 15px;
-
-      &:first-child {
-        margin-top: 0;
-      }
+      width: min-content;
     }
 
     &:last-child {
@@ -164,22 +151,59 @@
 
 
 .footer__logo {
-  @include vp-1199 {
-    height: 34px;
-
-    a {
+  a {
+    @include vp-1199 {
       display: block;
-    }
-
-    svg {
-      width: 118px;
-      height: 34px;
     }
   }
 
-  @include vp-767 {
-    svg {
+  svg {
+    @include vp-1199 {
+      width: 118px;
+      height: 34px;
+    }
+
+    @include vp-767 {
       width: 112px;
+    }
+  }
+
+  @include vp-1199 {
+    height: 34px;
+  }
+}
+
+.footer__nav a {
+
+  @include vp-767 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include hover {
+    outline: none;
+    color: $color-elephant;
+
+    span {
+      border-bottom: 1px solid $color-elephant;
+    }
+  }
+
+  @include focus {
+    outline: none;
+    color: $color-elephant;
+
+    span {
+      border: 1px solid $color-elephant;
+    }
+  }
+
+  @include active {
+    color: $color-elephant;
+
+    span {
+      border: 1px solid $color-transparent;
     }
   }
 }

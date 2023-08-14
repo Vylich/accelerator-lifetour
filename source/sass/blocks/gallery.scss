@@ -21,18 +21,6 @@
 
     @include vp-767 {
       gap: 3px;
-
-      picture:first-child {
-        img {
-          height: 103px;
-        }
-      }
-
-      picture:last-child {
-        img {
-          height: 153px;
-        }
-      }
     }
   }
 
@@ -42,6 +30,22 @@
     @include vp-767 {
       height: 259px;
       width: auto;
+    }
+  }
+}
+
+.gallery__item--more picture:first-child {
+  @include vp-767 {
+    img {
+      height: 103px;
+    }
+  }
+}
+
+.gallery__item--more picture:last-child {
+  @include vp-767 {
+    img {
+      height: 153px;
     }
   }
 }

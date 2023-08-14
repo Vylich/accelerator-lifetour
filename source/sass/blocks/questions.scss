@@ -1,21 +1,15 @@
 .questions {
-  background-image: url("../img/backgrounds/bg-form.jpg");
+  @include background-image ("bg-form", "backgrounds", "jpg");
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  @include retina {
-    background-image: url("../img/backgrounds/bg-form@2x.jpg");
-  }
-
   @include vp-1199 {
-    background-image: url("../img/backgrounds/bg-form-tablet.jpg");
     height: 679px;
   }
 
   @include vp-767 {
-    background-image: url("../img/backgrounds/bg-form-mobile.jpg");
     height: 621px;
   }
 }
@@ -123,55 +117,10 @@
     }
   }
 
-  input {
-    padding: 22px 30px;
-    outline: none;
-    border: 1px solid $color-transparent;
-    width: 340px;
-
-    &::placeholder {
-      opacity: 0.5;
-
-      @include vp-767 {
-        font-size: 14px;
-        line-height: 14px;
-      }
-    }
-
-    @include hover {
-      border: 1px solid $color-navy-blue;
-      outline: none;
-
-      &::placeholder {
-        color: $color-navy-blue;
-      }
-    }
-
-    @include focus {
-      outline: none;
-      border: 1px solid $color-resolution-blue;
-
-      &::placeholder {
-        color: $color-transparent;
-      }
-    }
-
-    @include active {
-      outline: none;
-      border: 1px solid $color-resolution-blue;
-
-      &::placeholder {
-        color: $color-transparent;
-      }
-    }
-
-    @include vp-1199 {
-      width: 100%;
-      padding: 15px 15px;
-    }
-
+  input::placeholder {
     @include vp-767 {
-      padding: 15px 14px;
+      font-size: 14px;
+      line-height: 14px;
     }
   }
 
@@ -196,6 +145,53 @@
     @include vp-767 {
       padding: 17px;
     }
+  }
+}
+
+.questions__form input {
+  padding: 22px 30px;
+  outline: none;
+  border: 1px solid $color-transparent;
+  width: 340px;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  @include hover {
+    border: 1px solid $color-navy-blue;
+    outline: none;
+
+    &::placeholder {
+      color: $color-navy-blue;
+    }
+  }
+
+  @include focus {
+    outline: none;
+    border: 1px solid $color-resolution-blue;
+
+    &::placeholder {
+      color: $color-transparent;
+    }
+  }
+
+  @include active {
+    outline: none;
+    border: 1px solid $color-resolution-blue;
+
+    &::placeholder {
+      color: $color-transparent;
+    }
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 15px 15px;
+  }
+
+  @include vp-767 {
+    padding: 15px 14px;
   }
 }
 
