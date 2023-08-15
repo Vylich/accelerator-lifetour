@@ -15,6 +15,7 @@
     font-size: 18px;
     color: $color-default-white;
     transition: color $trans-default;
+    width: min-content;
 
     &:disabled {
       opacity: 0.1;
@@ -54,6 +55,7 @@
 
 .header__nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 
   @include vp-1199 {

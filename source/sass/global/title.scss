@@ -5,6 +5,7 @@
     margin: 0;
     font-size: 35px;
     font-weight: 800;
+    padding-right: 77px;
 
     @include vp-1199 {
       font-size: 25px;
@@ -38,6 +39,11 @@
   }
 
   &--center {
+    h2 {
+      text-align: center;
+      padding-right: 0;
+    }
+
     &::after {
       left: 50%;
       transform: translateX(-50%);
