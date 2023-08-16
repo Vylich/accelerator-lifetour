@@ -74,19 +74,19 @@
 
 .learning__item {
   width: 278px;
-  height: 377px;
+  height: auto;
   background-color: $color-default-white;
   padding: 20px;
   box-shadow: $box-shadow-coaches;
 
   @include vp-1199 {
-    height: 411px;
+    height: auto;
     padding: 15px;
   }
 
   @include vp-767 {
     padding: 20px;
-    height: 385px;
+    height: auto;
   }
 
   picture {

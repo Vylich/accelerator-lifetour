@@ -49,6 +49,7 @@
   }
 
   @include vp-1199 {
+    padding-top: 32px;
     padding-left: 45px;
     margin-left: 0;
   }
@@ -99,6 +100,7 @@
     img {
       width: 100%;
       height: auto;
+      max-height: 169px;
     }
   }
 }

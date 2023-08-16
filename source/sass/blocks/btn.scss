@@ -21,6 +21,13 @@
     color: $color-resolution-blue;
   }
 
+  @include focus {
+    outline: none;
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+  }
+
   @include active {
     border: 1px solid $color-resolution-blue;
     background-color: $color-resolution-blue;

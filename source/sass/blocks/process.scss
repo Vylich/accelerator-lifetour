@@ -45,7 +45,7 @@
 
 .process__item {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 15px;
   margin-bottom: 32px;
   position: relative;
@@ -126,6 +126,7 @@
   span:first-child {
     display: flex;
     align-items: center;
+    padding-bottom: 11px;
   }
 
   &::after {

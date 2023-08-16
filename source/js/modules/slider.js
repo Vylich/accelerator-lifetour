@@ -1,4 +1,4 @@
-import Swiper from '../vendor/swiper';
+import Swiper from '../vendor/swiper'
 
 const heroContainer = document.querySelector('.slider');
 const toursContainer = document.querySelector('.tours__slider');
@@ -8,8 +8,10 @@ const advantagesContainer = document.querySelector('.advantages__slider');
 const galleryContainer = document.querySelector('.gallery__slider');
 
 const checkHeroSlider = () => {
-  const swiper = new Swiper(heroContainer, {
-    loop: true,
+  let swiperTouchStartX;
+
+  new Swiper(heroContainer, {
+    slidesPerView: 1,
     speed: 300,
     breakpoints: {
       320: {
@@ -23,8 +25,35 @@ const checkHeroSlider = () => {
       },
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    on: {
+      touchStart(swiper, e) {
+        if (e.type === 'touchstart') {
+          swiperTouchStartX = e.touches[0].clientX;
+        } else {
+          swiperTouchStartX = e.clientX;
+        }
+      },
+      touchEnd(swiper, e) {
+        const tolerance = 150;
+        const totalSlidesLen = swiper.slides.length;
+        const diff = (() => {
+          if (e.type === 'touchend') {
+            return e.changedTouches[0].clientX - swiperTouchStartX;
+          } else {
+            return e.clientX - swiperTouchStartX;
+          }
+        })();
+        if (swiper.isBeginning && diff >= tolerance) {
+          swiper.slideTo(totalSlidesLen - 1);
+        } else if (swiper.isEnd && diff <= -tolerance) {
+          setTimeout(() => {
+            swiper.slideTo(0);
+          }, 1);
+        }
+      },
     },
   });
 };
@@ -114,27 +143,31 @@ const checkReviewsSlider = () => {
 };
 
 const checkAdvantagesSlider = () => {
-  const swiper = new Swiper(advantagesContainer, {
-    speed: 300,
-    breakpoints: {
-      320: {
-        allowTouchMove: true,
+  let breakpoint = window.matchMedia('(max-width: 1200px)');
+  let swiper;
+
+  const breakpointChecker = function() {
+    if ( breakpoint.matches === true ) {
+      if ( swiper !== undefined ) swiper.destroy( true, true );
+        return;
+      } else if ( breakpoint.matches === false ) {
+        return enableSlider();
+      }
+  };
+  const enableSlider = () => {
+    swiper = new Swiper(advantagesContainer, {
+      speed: 300,
+      navigation: {
+        nextEl: '.advantages__btn-next',
+        prevEl: '.advantages__btn-prev',
       },
-      768: {
-        allowTouchMove: true,
-      },
-      1200: {
-        allowTouchMove: false,
-      },
-    },
-    navigation: {
-      nextEl: '.advantages__btn-next',
-      prevEl: '.advantages__btn-prev',
-    },
-    spaceBetween: 30,
-    slidesPerView: 3,
-    loop: true,
-  });
+      spaceBetween: 30,
+      slidesPerView: 3,
+      loop: true,
+    });
+  }
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
 };
 
 const checkGallerySlider = () => {

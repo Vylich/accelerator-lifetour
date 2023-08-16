@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+
   // Modules
   // ---------------------------------
 
@@ -42,15 +43,15 @@ window.addEventListener('DOMContentLoaded', () => {
     checkHeroSlider();
     checkToursSlider();
     checkCoachesSlider();
-    checkAdvantagesSlider();
     checkReviewsSlider();
     checkGallerySlider();
     createMap();
     findVideos();
     initMenu();
-    resetFocus();
     formValidate();
     attachAudioPlayer();
+    checkAdvantagesSlider();
+    resetFocus();
   });
 });
 

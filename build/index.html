@@ -32,78 +32,6 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Bold.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Bold.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-ExtraBold.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-ExtraBold.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Light.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Light.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Medium.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Medium.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Regular.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-Regular.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-SemiBold.woff"
-      as="font"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Montserrat-SemiBold.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <div class="wrapper">
@@ -126,7 +54,7 @@
               <a href="#gallery"> Фотографии</a>
               <a href="#contacts"> Контакты </a>
             </nav>
-            <a href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+            <a class="header__phone" href="tel:88007253232">8 800 725 32 32</a>
           </div>
         </header>
         <div class="slider swiper">
@@ -171,7 +99,7 @@
                   </div>
                 </div>
                 <div class="video" data-video>
-                  <a data-video-link href="https://youtu.be/9TZXsZItgdw">
+                  <a data-video-link="href="https://youtu.be/9TZXsZItgdw">
                     <picture>
                       <img
                         srcset="img/decorative-img/video.jpg"
@@ -189,6 +117,7 @@
                     type="button"
                     data-video-button
                     aria-label="Запустить видео"
+
                   ></button>
                 </div>
               </div>
@@ -335,6 +264,7 @@
                         class="player__play-button"
                         type="button"
                         aria-label="Запустить аудио"
+
                       >
                         <svg width="47" height="47">
                           <use
@@ -373,49 +303,49 @@
             </div>
             <div class="swiper-wrapper tours__list">
               <div class="swiper-slide tours__item tour-card">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/tours/tours-elbrus-mobile.jpg    1x,
+                      img/tours/tours-elbrus-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-elbrus-mobile.webp    1x,
+                      img/tours/tours-elbrus-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/tours/tours-elbrus-tablet.jpg    1x,
+                      img/tours/tours-elbrus-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-elbrus-tablet.webp    1x,
+                      img/tours/tours-elbrus-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-elbrus.webp    1x,
+                      img/tours/tours-elbrus@2x.webp 2x
+                    "
+                  />
+                  <img src="img/tours/tours-elbrus.jpg""
+                  srcset="img/tours/tours-elbrus@2x.jpg 2x" width="380"
+                  height="412" loading="lazy" alt="Пейзаж вокруг Эльбруса" />
+                </picture>
                 <div class="tour-card__wrapper">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        img/tours/tours-elbrus-mobile.jpg    1x,
-                        img/tours/tours-elbrus-mobile@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-elbrus-mobile.webp    1x,
-                        img/tours/tours-elbrus-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      srcset="
-                        img/tours/tours-elbrus-tablet.jpg    1x,
-                        img/tours/tours-elbrus-tablet@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-elbrus-tablet.webp    1x,
-                        img/tours/tours-elbrus-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-elbrus.webp    1x,
-                        img/tours/tours-elbrus@2x.webp 2x
-                      "
-                    />
-                    <img src="img/tours/tours-elbrus.jpg""
-                    srcset="img/tours/tours-elbrus@2x.jpg 2x" width="380"
-                    height="412" loading="lazy" alt="Пейзаж вокруг Эльбруса" />
-                  </picture>
                   <div class="tour-card__info-wrapper">
                     <div>
                       <span>
@@ -451,7 +381,7 @@
                       <span>
                         <svg
                           width="20"
-                          height="20"
+                          height="21"
                           focusable="false"
                           aria-hidden="true"
                         >
@@ -487,49 +417,49 @@
                 </div>
               </div>
               <div class="swiper-slide tours__item tour-card">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/tours/tours-belukha-mobile.jpg    1x,
+                      img/tours/tours-belukha-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-belukha-mobile.webp    1x,
+                      img/tours/tours-belukha-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/tours/tours-belukha-tablet.jpg    1x,
+                      img/tours/tours-belukha-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-belukha-tablet.webp    1x,
+                      img/tours/tours-belukha-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-belukha.webp    1x,
+                      img/tours/tours-belukha@2x.webp 2x
+                    "
+                  />
+                  <img src="img/tours/tours-belukha.jpg""
+                  srcset="img/tours/tours-belukha@2x.jpg 2x" width="380"
+                  height="412" loading="lazy" alt="Пейзаж вокруг Белухи" />
+                </picture>
                 <div class="tour-card__wrapper">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        img/tours/tours-belukha-mobile.jpg    1x,
-                        img/tours/tours-belukha-mobile@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-belukha-mobile.webp    1x,
-                        img/tours/tours-belukha-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      srcset="
-                        img/tours/tours-belukha-tablet.jpg    1x,
-                        img/tours/tours-belukha-tablet@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-belukha-tablet.webp    1x,
-                        img/tours/tours-belukha-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-belukha.webp    1x,
-                        img/tours/tours-belukha@2x.webp 2x
-                      "
-                    />
-                    <img src="img/tours/tours-belukha.jpg""
-                    srcset="img/tours/tours-belukha@2x.jpg 2x" width="380"
-                    height="412" loading="lazy" alt="Пейзаж вокруг Белухи" />
-                  </picture>
                   <div class="tour-card__info-wrapper">
                     <div>
                       <span>
@@ -565,7 +495,7 @@
                       <span>
                         <svg
                           width="20"
-                          height="20"
+                          height="21"
                           focusable="false"
                           aria-hidden="true"
                         >
@@ -601,49 +531,49 @@
                 </div>
               </div>
               <div class="swiper-slide tours__item tour-card">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/tours/tours-fisht-mobile.jpg    1x,
+                      img/tours/tours-fisht-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht-mobile.webp    1x,
+                      img/tours/tours-fisht-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/tours/tours-fisht-tablet.jpg    1x,
+                      img/tours/tours-fisht-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht-tablet.webp    1x,
+                      img/tours/tours-fisht-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht.webp    1x,
+                      img/tours/tours-fisht@2x.webp 2x
+                    "
+                  />
+                  <img src="img/tours/tours-fisht.jpg""
+                  srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
+                  height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
+                </picture>
                 <div class="tour-card__wrapper">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        img/tours/tours-fisht-mobile.jpg    1x,
-                        img/tours/tours-fisht-mobile@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht-mobile.webp    1x,
-                        img/tours/tours-fisht-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      srcset="
-                        img/tours/tours-fisht-tablet.jpg    1x,
-                        img/tours/tours-fisht-tablet@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht-tablet.webp    1x,
-                        img/tours/tours-fisht-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht.webp    1x,
-                        img/tours/tours-fisht@2x.webp 2x
-                      "
-                    />
-                    <img src="img/tours/tours-fisht.jpg""
-                    srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
-                    height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
-                  </picture>
                   <div class="tour-card__info-wrapper">
                     <div>
                       <span>
@@ -679,7 +609,7 @@
                       <span>
                         <svg
                           width="20"
-                          height="20"
+                          height="21"
                           focusable="false"
                           aria-hidden="true"
                         >
@@ -715,49 +645,49 @@
                 </div>
               </div>
               <div class="swiper-slide tours__item tour-card">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/tours/tours-fisht-mobile.jpg    1x,
+                      img/tours/tours-fisht-mobile@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht-mobile.webp    1x,
+                      img/tours/tours-fisht-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      img/tours/tours-fisht-tablet.jpg    1x,
+                      img/tours/tours-fisht-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht-tablet.webp    1x,
+                      img/tours/tours-fisht-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/tours/tours-fisht.webp    1x,
+                      img/tours/tours-fisht@2x.webp 2x
+                    "
+                  />
+                  <img src="img/tours/tours-fisht.jpg""
+                  srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
+                  height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
+                </picture>
                 <div class="tour-card__wrapper">
-                  <picture>
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        img/tours/tours-fisht-mobile.jpg    1x,
-                        img/tours/tours-fisht-mobile@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht-mobile.webp    1x,
-                        img/tours/tours-fisht-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      srcset="
-                        img/tours/tours-fisht-tablet.jpg    1x,
-                        img/tours/tours-fisht-tablet@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(max-width: 1199px)"
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht-tablet.webp    1x,
-                        img/tours/tours-fisht-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        img/tours/tours-fisht.webp    1x,
-                        img/tours/tours-fisht@2x.webp 2x
-                      "
-                    />
-                    <img src="img/tours/tours-fisht.jpg""
-                    srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
-                    height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
-                  </picture>
                   <div class="tour-card__info-wrapper">
                     <div>
                       <span>
@@ -793,7 +723,7 @@
                       <span>
                         <svg
                           width="20"
-                          height="20"
+                          height="21"
                           focusable="false"
                           aria-hidden="true"
                         >
@@ -1628,7 +1558,7 @@
                 <p>
                   Уделяем внимание безопасности клиентов, внедряя строгие
                   процедуры и&nbsp;протоколы безопасности. Имеем планы действий
-                  на случай непредвиденных обстоятельств и&nbsp;даем гарантию
+                  на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию
                   полной безопасности во&nbsp;время всего тура.
                 </p>
               </div>
@@ -1669,7 +1599,7 @@
                 <p>
                   Мы&nbsp;предоставляем клиентам все необходимое оборудование,
                   необходимое для путешествия. Это избавляет клиентов
-                  от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение,
+                  от необходимости покупать, брать с&nbsp;собой снаряжение,
                   что&nbsp;делает путешествие более удобным и&nbsp;экономически
                   выгодным.
                 </p>
@@ -1695,112 +1625,6 @@
                 </p>
               </div>
               <div class="advantages__item swiper-slide">
-                <span>
-                  <svg
-                    width="20"
-                    height="20"
-                    focusable="false"
-                    aria-hidden="true"
-                    aria-label="вконтакте"
-                  >
-                    <use xlink:href="img/sprite/sprite.svg#icon-leaf"></use>
-                  </svg>
-                </span>
-                <h4>Бережное отношение к&nbsp;природе</h4>
-                <p>
-                  Уделяем первостепенное внимание охране окружающей среды
-                  и&nbsp;гарантируем, что туры оказывают минимальное воздействие
-                  на&nbsp;природную среду. Наша компания следует принципу
-                  &laquo;Не&nbsp;оставлять следов&raquo;.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="advantages__slider advantages__slider--tablet">
-            <div class="advantages__container">
-              <div class="advantages__item">
-                <span>
-                  <svg
-                    width="20"
-                    height="20"
-                    focusable="false"
-                    aria-hidden="true"
-                    aria-label="вконтакте"
-                  >
-                    <use xlink:href="img/sprite/sprite.svg#icon-shield"></use>
-                  </svg>
-                </span>
-                <h4>Безопасность и&nbsp;охрана</h4>
-                <p>
-                  Уделяем внимание безопасности клиентов, внедряя строгие
-                  процедуры и&nbsp;протоколы безопасности. Имеем планы действий
-                  на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем
-                  гарантию полной безопасности во&nbsp;время всего тура.
-                </p>
-              </div>
-              <div class="advantages__item">
-                <span>
-                  <svg
-                    width="20"
-                    height="20"
-                    focusable="false"
-                    aria-hidden="true"
-                    aria-label="вконтакте"
-                  >
-                    <use xlink:href="img/sprite/sprite.svg#icon-crown"></use>
-                  </svg>
-                </span>
-                <h4>Экспертиза и&nbsp;знания</h4>
-                <p>
-                  Наша команда опытных гидов имеет обширные знания
-                  о&nbsp;местности, погодных условиях и&nbsp;технике
-                  безопасности. Это гарантирует, что наши клиенты находятся
-                  в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере
-                  насладиться опытом без опасений.
-                </p>
-              </div>
-              <div class="advantages__item">
-                <span>
-                  <svg
-                    width="20"
-                    height="20"
-                    focusable="false"
-                    aria-hidden="true"
-                    aria-label="вконтакте"
-                  >
-                    <use xlink:href="img/sprite/sprite.svg#icon-shoe"></use>
-                  </svg>
-                </span>
-                <h4>Оборудование и&nbsp;снаряжение</h4>
-                <p>
-                  Мы&nbsp;предоставляем клиентам все необходимое оборудование,
-                  необходимое для путешествия. Это избавляет клиентов от
-                  необходимости покупать, брать с&nbsp;собой снаряжение,
-                  что&nbsp;делает путешествие более удобным и&nbsp;экономически
-                  выгодным.
-                </p>
-              </div>
-              <div class="advantages__item">
-                <span>
-                  <svg
-                    width="20"
-                    height="20"
-                    focusable="false"
-                    aria-hidden="true"
-                    aria-label="вконтакте"
-                  >
-                    <use xlink:href="img/sprite/sprite.svg#icon-path"></use>
-                  </svg>
-                </span>
-                <h4>Индивидуальные маршруты</h4>
-                <p>
-                  Предлагает широкий выбор туров, отвечающих различным уровням
-                  мастерства и&nbsp;интересам. Мы&nbsp;также можем адаптировать
-                  маршруты к&nbsp;вашим конкретным потребностям и предпочтениям,
-                  чтобы вы получили индивидуальный опыт.
-                </p>
-              </div>
-              <div class="advantages__item">
                 <span>
                   <svg
                     width="20"
@@ -1941,7 +1765,6 @@
                   type="text"
                   name="name"
                   id="name"
-                  data-pristine-required-message="Пожалуйста введите свое имя"
                   placeholder="Как к&nbsp;вам обращаться?"
                   required
                 />
@@ -1952,7 +1775,6 @@
                   name="phone"
                   id="phone"
                   data-phone-pattern
-                  data-pristine-required-message="Пожалуйста введите свой телефон"
                   placeholder="Телефон"
                   required
                 />
@@ -2048,7 +1870,7 @@
               <a href="#gallery"> Фотографии </a>
               <a href="#contacts"> Контакты </a>
             </nav>
-            <a href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+            <a class="footer__phone" href="tel:88007253232">8 800 725 32 32</a>
           </div>
           <div class="footer__social-wrapper">
             <ul class="social">
@@ -2100,6 +1922,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

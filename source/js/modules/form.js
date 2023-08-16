@@ -19,12 +19,14 @@ const formValidate = () => {
       return true;
     }
     return false;
-  }, 'В имени не может быть цифр', 2, false);
+  }, '', 2, false);
 
   formNode.addEventListener('submit', function (e) {
     e.preventDefault();
     const valid = pristine.validate();
-    formNode.reset();
+    if (valid) {
+      formNode.reset();
+    }
   });
 };
 

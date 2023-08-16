@@ -61,6 +61,8 @@
   @include vp-1199 {
     max-width: 324px;
     padding: 30px 20px;
+    padding-top: 28px;
+    padding-bottom: 32px;
   }
 
   @include vp-767 {
@@ -167,23 +169,9 @@
 .advantages__slider {
   overflow: visible;
 
-  &--tablet {
-    display: none;
-
-    @include vp-1199 {
-      display: block;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-  }
-
   @include vp-1199 {
-    display: none;
-
-    &--tablet {
-      display: block;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
+    display: block;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }

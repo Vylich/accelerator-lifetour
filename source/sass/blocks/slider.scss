@@ -99,6 +99,7 @@
 .slider__item {
   width: 100%;
   background-size: cover;
+  height: auto;
 
   &--caucasus {
     @include background-image("bg-caucasus", "backgrounds", "jpg");
@@ -121,4 +122,9 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.slider__container {
+  display: flex;
+  align-items: stretch;
 }
