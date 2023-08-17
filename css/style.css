@@ -5383,6 +5383,8 @@ button,
   .tours::before {
     right: 0;
     top: -164px;
+    width: 294px;
+    height: 1364px;
   }
 
   .tours__slider {
@@ -6102,6 +6104,8 @@ button,
   .tours::before {
     right: 0;
     top: 67px;
+    width: 176px;
+    height: 595px;
     background-size: contain;
   }
 
