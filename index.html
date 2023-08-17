@@ -24,7 +24,7 @@
       sizes="16x16"
       href="/accelerator-lifetour/img/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+    <link rel="manifest" href="/accelerator-lifetour/img/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/accelerator-lifetour/img/favicons/safari-pinned-tab.svg"
@@ -101,6 +101,13 @@
                 <div class="video" data-video>
                   <a data-video-link="href="https://youtu.be/9TZXsZItgdw">
                     <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/decorative-img/video.webp    1x,
+                          img/decorative-img/video@2x.webp 2x
+                        "
+                      />
                       <img
                         srcset="img/decorative-img/video.jpg"
                         src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg"
@@ -163,9 +170,16 @@
                 </div>
                 <div class="polaroid">
                   <picture>
+                    <source
+                        type="image/webp"
+                        srcset="
+                          img/decorative-img/polaroid-back.webp    1x,
+                          img/decorative-img/polaroid-back@2x.webp 2x
+                        "
+                      />
                     <img
                       src="img/decorative-img/polaroid-back.png"
-                      srcset="img/decorative-img/polaroid-back.png 2x"
+                      srcset="img/decorative-img/polaroid-back@2x.png 2x"
                       width="308"
                       height="407"
                       loading="lazy"
@@ -173,9 +187,16 @@
                     />
                   </picture>
                   <picture>
+                    <source
+                        type="image/webp"
+                        srcset="
+                          img/decorative-img/polaroid.webp    1x,
+                          img/decorative-img/polaroid@2x.webp 2x
+                        "
+                      />
                     <img
                       src="img/decorative-img/polaroid.png"
-                      srcset="img/decorative-img/polaroid.png 2x"
+                      srcset="img/decorative-img/polaroid@2x.png 2x"
                       width="277"
                       height="366"
                       loading="lazy"
@@ -302,49 +323,7 @@
               <button class="swiper__btn-next swiper-button-next btn"></button>
             </div>
             <div class="swiper-wrapper tours__list">
-              <div class="swiper-slide tours__item tour-card">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      img/tours/tours-elbrus-mobile.jpg    1x,
-                      img/tours/tours-elbrus-mobile@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-elbrus-mobile.webp    1x,
-                      img/tours/tours-elbrus-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    srcset="
-                      img/tours/tours-elbrus-tablet.jpg    1x,
-                      img/tours/tours-elbrus-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-elbrus-tablet.webp    1x,
-                      img/tours/tours-elbrus-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-elbrus.webp    1x,
-                      img/tours/tours-elbrus@2x.webp 2x
-                    "
-                  />
-                  <img src="img/tours/tours-elbrus.jpg""
-                  srcset="img/tours/tours-elbrus@2x.jpg 2x" width="380"
-                  height="412" loading="lazy" alt="Пейзаж вокруг Эльбруса" />
-                </picture>
+              <div class="swiper-slide tours__item tour-card tour-card--elbrus">
                 <div class="tour-card__wrapper">
                   <div class="tour-card__info-wrapper">
                     <div>
@@ -416,49 +395,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tours__item tour-card">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      img/tours/tours-belukha-mobile.jpg    1x,
-                      img/tours/tours-belukha-mobile@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-belukha-mobile.webp    1x,
-                      img/tours/tours-belukha-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    srcset="
-                      img/tours/tours-belukha-tablet.jpg    1x,
-                      img/tours/tours-belukha-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-belukha-tablet.webp    1x,
-                      img/tours/tours-belukha-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-belukha.webp    1x,
-                      img/tours/tours-belukha@2x.webp 2x
-                    "
-                  />
-                  <img src="img/tours/tours-belukha.jpg""
-                  srcset="img/tours/tours-belukha@2x.jpg 2x" width="380"
-                  height="412" loading="lazy" alt="Пейзаж вокруг Белухи" />
-                </picture>
+              <div class="swiper-slide tours__item tour-card tour-card--belukha">
                 <div class="tour-card__wrapper">
                   <div class="tour-card__info-wrapper">
                     <div>
@@ -530,49 +467,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tours__item tour-card">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      img/tours/tours-fisht-mobile.jpg    1x,
-                      img/tours/tours-fisht-mobile@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht-mobile.webp    1x,
-                      img/tours/tours-fisht-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    srcset="
-                      img/tours/tours-fisht-tablet.jpg    1x,
-                      img/tours/tours-fisht-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht-tablet.webp    1x,
-                      img/tours/tours-fisht-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht.webp    1x,
-                      img/tours/tours-fisht@2x.webp 2x
-                    "
-                  />
-                  <img src="img/tours/tours-fisht.jpg""
-                  srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
-                  height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
-                </picture>
+              <div class="swiper-slide tours__item tour-card tour-card--fisht">
                 <div class="tour-card__wrapper">
                   <div class="tour-card__info-wrapper">
                     <div>
@@ -644,49 +539,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tours__item tour-card">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      img/tours/tours-fisht-mobile.jpg    1x,
-                      img/tours/tours-fisht-mobile@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht-mobile.webp    1x,
-                      img/tours/tours-fisht-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    srcset="
-                      img/tours/tours-fisht-tablet.jpg    1x,
-                      img/tours/tours-fisht-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 1199px)"
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht-tablet.webp    1x,
-                      img/tours/tours-fisht-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/tours/tours-fisht.webp    1x,
-                      img/tours/tours-fisht@2x.webp 2x
-                    "
-                  />
-                  <img src="img/tours/tours-fisht.jpg""
-                  srcset="img/tours/tours-fisht@2x.jpg 2x" width="380"
-                  height="412" loading="lazy" alt="Пейзаж вокруг Фишт" />
-                </picture>
+              <div class="swiper-slide tours__item tour-card tour-card--elbrus">
                 <div class="tour-card__wrapper">
                   <div class="tour-card__info-wrapper">
                     <div>
@@ -826,7 +679,7 @@
                       img/coaches/coaches-alex@2x.webp 2x
                     "
                   />
-                  <img src="img/coaches/coaches-alex.jpg""
+                  <img src="img/coaches/coaches-alex.jpg"
                   srcset="img/coaches/coaches-alex@2x.jpg 2x" width="238"
                   height="212" loading="lazy" alt="Фото инструктора Александра"
                   />
@@ -889,7 +742,7 @@
                       img/coaches/coaches-svetlana@2x.webp 2x
                     "
                   />
-                  <img src="img/coaches/coaches-svetlana.jpg""
+                  <img src="img/coaches/coaches-svetlana.jpg"
                   srcset="img/coaches/coaches-svetlana@2x.jpg 2x" width="238"
                   height="212" loading="lazy" alt="Фото инструктора Светланы" />
                 </picture>
@@ -952,7 +805,7 @@
                       img/coaches/coaches-nadya@2x.webp 2x
                     "
                   />
-                  <img src="img/coaches/coaches-nadya.jpg""
+                  <img src="img/coaches/coaches-nadya.jpg"
                   srcset="img/coaches/coaches-nadya@2x.jpg 2x" width="238"
                   height="212" loading="lazy" alt="Фото инструктора Надежды" />
                 </picture>
@@ -1015,7 +868,7 @@
                       img/coaches/coaches-fedya@2x.webp 2x
                     "
                   />
-                  <img src="img/coaches/coaches-fedya.jpg""
+                  <img src="img/coaches/coaches-fedya.jpg"
                   srcset="img/coaches/coaches-fedya@2x.jpg 2x" width="238"
                   height="212" loading="lazy" alt="Фото инструктора Федора" />
                 </picture>
@@ -1078,7 +931,7 @@
                       img/coaches/coaches-fedya@2x.webp 2x
                     "
                   />
-                  <img src="img/coaches/coaches-fedya.jpg""
+                  <img src="img/coaches/coaches-fedya.jpg"
                   srcset="img/coaches/coaches-fedya@2x.jpg 2x" width="238"
                   height="212" loading="lazy" alt="Фото инструктора Федора" />
                 </picture>
@@ -1668,6 +1521,13 @@
             <div class="gallery__container swiper-wrapper">
               <div class="gallery__item swiper-slide">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-first.webp    1x,
+                      img/gallery/gallery-first@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-first.jpg"
                     srcset="img/gallery/gallery-first@2x.jpg 2x"
@@ -1681,6 +1541,13 @@
               </div>
               <div class="gallery__item swiper-slide gallery__item--more">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-second.webp    1x,
+                      img/gallery/gallery-second@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-second.jpg"
                     srcset="img/gallery/gallery-second@2x.jpg 2x"
@@ -1691,6 +1558,13 @@
                   />
                 </picture>
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-third.webp    1x,
+                      img/gallery/gallery-third@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-third.jpg"
                     srcset="img/gallery/gallery-third@2x.jpg 2x"
@@ -1703,6 +1577,13 @@
               </div>
               <div class="gallery__item swiper-slide">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-fourth.webp    1x,
+                      img/gallery/gallery-fourth@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-fourth.jpg"
                     srcset="img/gallery/gallery-fourth@2x.jpg 2x"
@@ -1715,6 +1596,13 @@
               </div>
               <div class="gallery__item swiper-slide gallery__item--more">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-fifth.webp    1x,
+                      img/gallery/gallery-fifth@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-fifth.jpg"
                     srcset="img/gallery/gallery-fifth@2x.jpg 2x"
@@ -1725,6 +1613,13 @@
                   />
                 </picture>
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-sixth.webp    1x,
+                      img/gallery/gallery-sixth@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-sixth.jpg"
                     srcset="img/gallery/gallery-sixth@2x.jpg 2x"
@@ -1737,6 +1632,13 @@
               </div>
               <div class="gallery__item swiper-slide">
                 <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/gallery/gallery-seventh.webp    1x,
+                      img/gallery/gallery-seventh@2x.webp 2x
+                    "
+                  />
                   <img
                     src="img/gallery/gallery-seventh.jpg"
                     srcset="img/gallery/gallery-seventh@2x.jpg 2x"
@@ -1758,7 +1660,7 @@
             Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для
             консультации.
           </p>
-          <form class="questions__form" action="" method="get">
+          <form class="questions__form" action=" method="get">
             <fieldset>
               <label class="questions__label" for="name">
                 <input
@@ -1922,7 +1824,6 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
