@@ -30,7 +30,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/decorative-img/mountains-in-clouds.png");
+    @include background-image ("mountains-in-clouds", "decorative-img", "png");
     width: 602px;
     height: 1364px;
     top: -127px;
@@ -38,16 +38,14 @@
     z-index: -1;
 
     @include vp-1199 {
-      right: -308px;
+      right: 0;
       top: -164px;
     }
 
     @include vp-767 {
-      right: -296px;
+      right: 0;
       top: 67px;
       background-size: contain;
-      width: 150%;
-      height: 150%;
     }
   }
 }
