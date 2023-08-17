@@ -33,6 +33,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  checkHeroSlider();
+  checkAdvantagesSlider();
+  resetFocus();
+  checkToursSlider();
+  checkCoachesSlider();
+  checkReviewsSlider();
+  checkGallerySlider();
+  initMenu();
+  formValidate();
+  createMap();
 
   // Modules
   // ---------------------------------
@@ -40,18 +50,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    checkHeroSlider();
-    checkToursSlider();
-    checkCoachesSlider();
-    checkReviewsSlider();
-    checkGallerySlider();
-    createMap();
     findVideos();
-    initMenu();
-    formValidate();
     attachAudioPlayer();
-    checkAdvantagesSlider();
-    resetFocus();
   });
 });
 
