@@ -19,7 +19,7 @@ const formValidate = () => {
       return true;
     }
     return false;
-  }, '', 2, false);
+  }, 'В имени не может быть цифр', 2, false);
 
   formNode.addEventListener('submit', function (e) {
     e.preventDefault();
