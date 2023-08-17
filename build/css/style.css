@@ -5249,6 +5249,10 @@ button,
     display: block;
   }
 
+  .footer__nav a:last-child {
+    display: block;
+  }
+
   .social {
     margin-top: 37px;
   }
@@ -6027,6 +6031,10 @@ button,
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
+  }
+
+  .footer__nav a:last-child {
+    display: block;
   }
 
   .footer__nav a:first-child {
