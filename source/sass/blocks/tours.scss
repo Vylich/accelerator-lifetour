@@ -43,11 +43,11 @@
     }
 
     @include vp-767 {
-      right: -216px;
-      top: 296px;
+      right: -296px;
+      top: 67px;
       background-size: contain;
-      width: 346px;
-      height: 595px;
+      width: 150%;
+      height: 150%;
     }
   }
 }
@@ -62,7 +62,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 27px;
+    padding-bottom: 25px;
     padding-left: 0;
     padding-right: 0;
   }

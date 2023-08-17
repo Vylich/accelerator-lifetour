@@ -202,6 +202,10 @@
   display: none;
   padding-top: 2px;
   position: absolute;
+
+  @include vp-1199 {
+    position: relative;
+  }
 }
 
 

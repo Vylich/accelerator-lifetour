@@ -37,11 +37,13 @@
   .main-nav--opened .header__nav {
     display: flex;
     flex-direction: column;
+    overflow-block: scroll;
   }
 
   .main-nav--opened {
     background-color: $color-default-white;
-    overflow: hidden;
+    max-height: 100vh;
+    overflow: scroll;
 
     svg {
       color: $color-elephant;

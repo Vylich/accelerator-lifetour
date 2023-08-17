@@ -16,7 +16,7 @@ const createMap = () => {
   ).addTo(map);
 
   const mainPinIcon = L.icon({
-    iconUrl: '/img/icons/icon-marker.svg',
+    iconUrl: '/accelerator-lifetour/img/icons/icon-marker.svg',
     iconSize: [48, 48],
     iconAnchor: [19, 50],
   });

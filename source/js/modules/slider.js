@@ -84,7 +84,7 @@ const checkToursSlider = () => {
         allowTouchMove: false,
       },
     },
-    loop: true,
+    loop: false,
   });
 };
 

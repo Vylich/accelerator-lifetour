@@ -2649,6 +2649,19 @@ button,
 
 .header__phone{
   max-width:142px;
+  min-width:142px;
+}
+@media (max-width: 1199px){
+  .header__phone{
+    max-width:128px;
+    min-width:128px;
+  }
+}
+@media (max-width: 767px){
+  .header__phone{
+    max-width:112px;
+    min-width:112px;
+  }
 }
 
 .header__wrapper{
@@ -2725,6 +2738,7 @@ button,
   -ms-flex-wrap:wrap;
       flex-wrap:wrap;
   gap:20px;
+  padding:0 70px;
 }
 @media (max-width: 1199px){
   .header__nav{
@@ -2737,8 +2751,7 @@ button,
             order:4;
     display:none;
     width:100%;
-    padding-top:47px;
-    padding-bottom:65px;
+    padding:47px 0 65px 0;
     gap:18px;
     margin-left:-5px;
   }
@@ -2749,6 +2762,7 @@ button,
     padding-top:18px;
     gap:14px;
     padding-bottom:46px;
+    padding:18px 0 46px 0;
   }
 }
 
@@ -2951,6 +2965,19 @@ button,
 
 .footer__phone{
   max-width:142px;
+  min-width:142px;
+}
+@media (max-width: 1199px){
+  .footer__phone{
+    max-width:128px;
+    min-width:128px;
+  }
+}
+@media (max-width: 767px){
+  .footer__phone{
+    max-width:112px;
+    min-width:112px;
+  }
 }
 
 .footer__nav{
@@ -2961,12 +2988,15 @@ button,
       flex-wrap:wrap;
   gap:21px;
   margin-right:64px;
+  padding:0 70px;
 }
 @media (max-width: 1199px){
   .footer__nav{
     margin-right:0;
     margin-bottom:2px;
     gap:9px;
+    padding:0;
+    padding-left:30px;
   }
 }
 @media (max-width: 767px){
@@ -2980,6 +3010,7 @@ button,
        -moz-column-gap:52px;
             column-gap:52px;
     margin-left:-6px;
+    padding-left:0;
   }
 }
 
@@ -3462,7 +3493,7 @@ button,
 
 .video{
   position:absolute;
-  bottom:182px;
+  top:301px;
   right:120px;
   width:482px;
   height:317px;
@@ -3471,7 +3502,7 @@ button,
 @media (max-width: 1199px){
   .video{
     position:relative;
-    bottom:auto;
+    top:auto;
     right:auto;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -3934,11 +3965,11 @@ button,
 }
 @media (max-width: 767px){
   .tours::before{
-    right:-216px;
-    top:296px;
+    right:-296px;
+    top:67px;
     background-size:contain;
-    width:346px;
-    height:595px;
+    width:150%;
+    height:150%;
   }
 }
 
@@ -3954,7 +3985,7 @@ button,
 }
 @media (max-width: 767px){
   .tours__slider{
-    padding-bottom:27px;
+    padding-bottom:25px;
     padding-left:0;
     padding-right:0;
   }
@@ -4076,24 +4107,152 @@ button,
 
 .tour-card{
   color:#ffffff;
-  position:relative;
-}
-
-.tour-card__wrapper{
-  z-index:2;
-  position:absolute;
-  bottom:0;
-  left:0;
+  background-size:cover;
   padding:206px 20px 27px;
   height:auto;
-  width:100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
 }
-@media (max-width: 767px){
-  .tour-card__wrapper{
-    padding-top:197px;
+@supports (background-image: url("../img/tours/tours-elbrus.webp")){
+  .tour-card--elbrus{
+    background-image:url("../img/tours/tours-elbrus.webp");
+  }
+  @media (max-width: 1199px){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus-tablet.webp");
+    }
+  }
+  @media (max-width: 767px){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus-mobile.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus-tablet@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus-mobile@2x.webp");
+    }
   }
 }
-.tour-card__wrapper::after{
+@supports not (background-image: url("../img/tours/tours-elbrus.webp")){
+  .tour-card--elbrus{
+    background-image:url("../img/tours/tours-elbrus.jpg");
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--elbrus{
+      background-image:url("../img/tours/tours-elbrus@2x.jpg");
+    }
+  }
+}
+@supports (background-image: url("../img/tours/tours-belukha.webp")){
+  .tour-card--belukha{
+    background-image:url("../img/tours/tours-belukha.webp");
+  }
+  @media (max-width: 1199px){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha-tablet.webp");
+    }
+  }
+  @media (max-width: 767px){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha-mobile.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha-tablet@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha-mobile@2x.webp");
+    }
+  }
+}
+@supports not (background-image: url("../img/tours/tours-belukha.webp")){
+  .tour-card--belukha{
+    background-image:url("../img/tours/tours-belukha.jpg");
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--belukha{
+      background-image:url("../img/tours/tours-belukha@2x.jpg");
+    }
+  }
+}
+@supports (background-image: url("../img/tours/tours-fisht.webp")){
+  .tour-card--fisht{
+    background-image:url("../img/tours/tours-fisht.webp");
+  }
+  @media (max-width: 1199px){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht-tablet.webp");
+    }
+  }
+  @media (max-width: 767px){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht-mobile.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht-tablet@2x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht-mobile@2x.webp");
+    }
+  }
+}
+@supports not (background-image: url("../img/tours/tours-fisht.webp")){
+  .tour-card--fisht{
+    background-image:url("../img/tours/tours-fisht.jpg");
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    .tour-card--fisht{
+      background-image:url("../img/tours/tours-fisht@2x.jpg");
+    }
+  }
+}
+@media (max-width: 1199px){
+  .tour-card{
+    padding-top:27px;
+    aspect-ratio:81/103;
+  }
+}
+@media (max-width: 767px){
+  .tour-card{
+    aspect-ratio:580/824;
+  }
+}
+.tour-card::after{
   position:absolute;
   content:"";
   top:0;
@@ -4102,7 +4261,23 @@ button,
   height:100%;
   background-image:-webkit-gradient(linear, left bottom, left top, color-stop(21.9%, rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(255, 255, 255, 0)));
   background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.6) 21.9%, rgba(255, 255, 255, 0) 60%);
-  z-index:-1;
+}
+
+.tour-card__wrapper{
+  z-index:2;
+  position:relative;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack:end;
+      -ms-flex-pack:end;
+          justify-content:flex-end;
+  width:100%;
+  height:auto;
 }
 .tour-card__wrapper h3{
   margin:0;
@@ -4253,7 +4428,7 @@ button,
 @media (max-width: 767px){
   .tour-card__data{
     padding-top:15px;
-    margin-top:13px;
+    margin-top:15px;
   }
 }
 .tour-card__data span{
@@ -4355,7 +4530,7 @@ button,
 }
 @media (max-width: 767px){
   .learning__coaches{
-    margin-bottom:37px;
+    margin-bottom:40px;
   }
 }
 
@@ -4892,6 +5067,7 @@ button,
     padding-bottom:0;
     padding-left:15px;
     margin-left:0;
+    padding-top:31px;
   }
 }
 
@@ -5679,6 +5855,11 @@ button,
   padding-top:2px;
   position:absolute;
 }
+@media (max-width: 1199px){
+  .questions__error{
+    position:relative;
+  }
+}
 
 .is-invalid input{
   border:1px solid #ff121f;
@@ -5703,7 +5884,7 @@ button,
 }
 @media (max-width: 767px){
   .contacts{
-    margin-bottom:30px;
+    margin-bottom:28px;
     margin-top:65px;
   }
 }
@@ -5974,10 +6155,12 @@ button,
     -webkit-box-direction:normal;
         -ms-flex-direction:column;
             flex-direction:column;
+    overflow-block:scroll;
   }
   .main-nav--opened{
     background-color:#ffffff;
-    overflow:hidden;
+    max-height:100vh;
+    overflow:scroll;
   }
   .main-nav--opened svg{
     color:#2d383f;

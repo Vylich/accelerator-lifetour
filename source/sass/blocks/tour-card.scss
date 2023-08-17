@@ -1,19 +1,31 @@
 .tour-card {
   color: $color-default-white;
-  position: relative;
-}
-
-.tour-card__wrapper {
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-size: cover;
   padding: 206px 20px 27px;
   height: auto;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &--elbrus {
+    @include background-image ("tours-elbrus", "tours")
+  }
+
+  &--belukha {
+    @include background-image ("tours-belukha", "tours")
+  }
+
+  &--fisht {
+    @include background-image ("tours-fisht", "tours")
+  }
+
+  @include vp-1199 {
+    padding-top: 27px;
+    aspect-ratio: 81 / 103;
+  }
 
   @include vp-767 {
-    padding-top: 197px;
+    aspect-ratio: 580 / 824;
   }
 
   &::after {
@@ -24,8 +36,17 @@
     width: 100%;
     height: 100%;
     background-image: $overlay-card-gradient;
-    z-index: -1;
   }
+}
+
+.tour-card__wrapper {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
 
   h3 {
     margin: 0;
@@ -141,7 +162,7 @@
 
   @include vp-767 {
     padding-top: 15px;
-    margin-top: 13px;
+    margin-top: 15px;
   }
 
   span {
