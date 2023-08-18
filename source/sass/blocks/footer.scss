@@ -37,7 +37,16 @@
   }
 }
 
-.footer__nav-wrapper a {
+.footer__phone {
+  max-width: 142px;
+  min-width: 142px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__phone a {
   font-weight: 600;
   font-size: 18px;
   transition: color $trans-default;
@@ -54,27 +63,6 @@
 
   @include active {
     color: $color-navy-blue;
-  }
-
-  @include vp-1199 {
-    &:last-child {
-      display: none;
-    }
-  }
-}
-
-.footer__phone {
-  max-width: 142px;
-  min-width: 142px;
-
-  @include vp-1199 {
-    max-width: 128px;
-    min-width: 128px;
-  }
-
-  @include vp-767 {
-    max-width: 112px;
-    min-width: 112px;
   }
 }
 
